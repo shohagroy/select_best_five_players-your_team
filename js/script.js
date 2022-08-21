@@ -154,7 +154,7 @@ function playerFiveSelect(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert("You have Already Selected 5 Player!")
     }
 }
 
@@ -165,11 +165,34 @@ function playerExpensesCalculate(){
     const perPlayerBudgetString = perPlayerBudget.value;
     const perPlayerBudgetAmount = parseFloat(perPlayerBudgetString);
 
-    const playerExpensesFild = document.getElementById('player-expense');
-    document.getElementById('player-expense').innerText = playerList.length * perPlayerBudgetAmount; 
-    // const playerExpensesNumber = parseFloat(playerExpensesString);
+    if(isNaN(playerList.length) || playerList.length < 5){
+        alert("Please Select Team!! N:B: You Can Select 5 Players")
+    }
+    else{
+        if(isNaN(perPlayerBudgetAmount)){
+            alert("Please Enter Your Par Players Expenses")
+        }
+        else{
+            document.getElementById('player-expense').innerText = playerList.length * perPlayerBudgetAmount;
+        }
+    }
+}
 
-    // playerExpensesFild.innerText = (playerList.length + 1) * perPlayerBudgetAmount
+function totalExpensesCalculate(){
+    const playerExpenses = document.getElementById('player-expense').innerText;
+    const playerExpensesNumber = parseFloat(playerExpenses);
+    console.log(playerExpensesNumber);
 
-    console.log(playerExpensesFild);
+    const managerExpenses = document.getElementById('manager-expenses-fild').value
+    const managerExpensesNumber = parseFloat(managerExpenses);
+
+    const coachExpenses = document.getElementById('coach-expenses-fild').value
+    const coachExpensesNumber = parseFloat(coachExpenses);
+
+    if(isNaN(managerExpensesNumber) || isNaN(coachExpensesNumber)){
+        alert("Please Enter Manager and Coach Expenses Amount!")
+    }
+    else{
+        document.getElementById('total-expenses-fild').innerText = playerExpensesNumber + managerExpensesNumber + coachExpensesNumber;
+    }
 }
