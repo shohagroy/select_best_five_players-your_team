@@ -51,50 +51,50 @@
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/1.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Lionel Messi 30
+                  <h5 class="card-title text-white text-center" id="messi">Lionel Messi 30
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
                     <div>
                         <p class="card-text text-white">
-                            Goales -30
+                            Goales- 30
                            </p>
                     </div>
                     <div>
                         <p class="card-text text-white ">
-                            Assist 120
+                            Assist- 120
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-messi" class="button w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Marquinhos 5
+                  <h5 class="card-title text-white text-center" id="marquinhos">Marquinhos 5
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
                     <div>
                         <p class="card-text text-white">
-                            Goales -0
+                            Goales- 0
                            </p>
                     </div>
                     <div>
                         <p class="card-text text-white ">
-                            Assist 5
+                            Assist- 5
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-marquinhos" class="button w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/3.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Kylian Mbappé 7
+                  <h5 class="card-title text-white text-center" id="kylian">Kylian Mbappé 7
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -109,7 +109,7 @@
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-kylian" class="button w-100">Select</button>
                 </div>
             </div>  
 
@@ -118,12 +118,8 @@
                     <h4>Select- 5</h4>
                 </div>
                 <div class="mx-4">
-                    <ol>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
+                    <ol id="player-list">
+                        
                     </ol>
                 </div>
             </div>
@@ -135,7 +131,7 @@
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/4.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Neymar Jr 10
+                  <h5 class="card-title text-white text-center" id="neymar">Neymar Jr 10
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -150,14 +146,14 @@
                            </p>
                     </div>
                 </div>
-                  <button class="button  w-100">Select</button>
+                  <button id="select-neymar" class="button  w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/5.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Ander Herrera 21
+                  <h5 class="card-title text-white text-center" id="herrera">Ander Herrera 21
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -168,18 +164,18 @@
                     </div>
                     <div>
                         <p class="card-text text-white ">
-                            Assist 0
+                            Assist- 0
                            </p>
                     </div>
                 </div>
-                  <button class="button  w-100">Select</button>
+                  <button id="select-herrera" class="button  w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/8.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Idrissa Gueye 27
+                  <h5 class="card-title text-white text-center" id="idrissa">Idrissa Gueye 27
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -194,7 +190,7 @@
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-idrissa" class="button w-100">Select</button>
                 </div>
             </div> 
 
@@ -204,12 +200,12 @@
                         <h4>Budget</h4>
                     </div>
                     <div class="d-flex justify-content-between align-items-center text-white">
-                        <span>Per Player</span><input type="number" class="w-50 my-3">
+                        <span>Per Player</span><input type="number" id="par-player-budget" class="w-50 my-3">
                     </div>
-                    <button class="button p-1 w-100" >Calculate</button>
+                    <button class="button p-1 w-100" onclick="playerExpensesCalculate()" >Calculate</button>
                     <div class="text-white d-flex justify-content-between p-2">
-                        <p>Player Expenses</p>
-                    <span>$5000</span>
+                        <p>Player Expenses</p><span>$<span id="player-expense">0.00</span></span>
+                    
                     </div>
                     <div class="d-flex justify-content-between align-items-center text-white">
                         <span>Manager</span><input type="number" class="w-50">
@@ -233,7 +229,7 @@
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/7.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Achraf Hakimi 2
+                  <h5 class="card-title text-white text-center" id="hakimi">Achraf Hakimi 2
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
                     <div>
@@ -243,18 +239,18 @@
                     </div>
                     <div>
                         <p class="card-text text-white ">
-                            Assist 0
+                            Assist -0
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-hakimi" class="button w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/6.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Gianluigi Donnarumma 99
+                  <h5 class="card-title text-white text-center" id="donnarumma">Gianluigi Donnarumma 99
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -269,14 +265,14 @@
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-donnarumma" class="button w-100">Select</button>
                 </div>
             </div>
 
             <div class="card col-3 m-3 player-container border-white">
                 <img src="images/players/9.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white text-center">Alexandre Letellier 90
+                  <h5 class="card-title text-white text-center" id="alexandre">Alexandre Letellier 90
 
                 </h5>
                 <div class="d-flex justify-content-evenly py-4">
@@ -291,7 +287,7 @@
                            </p>
                     </div>
                 </div>
-                  <button class="button w-100">Select</button>
+                  <button id="select-alexandre" class="button w-100">Select</button>
                 </div>
             </div> 
         </div>
@@ -303,5 +299,7 @@
     <div class="text-white">
         <p class="text-center p-4">Copyright @ 2022 All Rights Reserved.</p>
     </div>
+    <!-- javaScript added link  -->
+    <script src="js/script.js"></script>
   </body>
 </html>
