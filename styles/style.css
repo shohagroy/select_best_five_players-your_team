@@ -1,0 +1,35 @@
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mian_header_container{
+    background-image:linear-gradient(rgba(0, 1, 41, 0.242), rgba(0, 0, 0, 0.511)), url('https://images.psg.media/media/148084/hero-header-template-2023.jpg?center=0.5,0.5&mode=crop&width=2000&height=1000&quality=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+}
+
+
+.card-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn{
+    font-size: 25px;
+    font-weight: bold;
+
+}
