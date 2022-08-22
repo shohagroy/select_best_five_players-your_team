@@ -9,7 +9,7 @@ document.getElementById('select-messi').addEventListener('click', function(){
         clickToDisableButton('select-messi');   
     }
     else{
-        alert('You have Select Player 5')
+        alert('You have Select Already - 5 Player')
     }
     
 })
@@ -25,7 +25,8 @@ document.getElementById('select-marquinhos').addEventListener('click', function(
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 })
 
@@ -40,7 +41,8 @@ document.getElementById('select-kylian').addEventListener('click', function(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 })
 
@@ -55,7 +57,9 @@ document.getElementById('select-neymar').addEventListener('click', function(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
+
     }
 })
 
@@ -70,7 +74,8 @@ document.getElementById('select-herrera').addEventListener('click', function(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 })
 
@@ -85,7 +90,8 @@ document.getElementById('select-idrissa').addEventListener('click', function(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 
 })
@@ -101,7 +107,8 @@ document.getElementById('select-hakimi').addEventListener('click', function(){
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 })
 
@@ -115,7 +122,8 @@ document.getElementById('select-donnarumma').addEventListener('click', function(
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
 })
 
@@ -129,7 +137,8 @@ document.getElementById('select-alexandre').addEventListener('click', function()
         
     }
     else{
-        alert("you have selected 5 player")
+        alert('You have Select Already - 5 Player')
+
     }
     
 })
